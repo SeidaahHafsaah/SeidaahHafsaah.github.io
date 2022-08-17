@@ -1,0 +1,256 @@
+@media screen and (min-width:871px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circle_one {
+    background-image: url(../img/img1.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 5s infinite ease-in-out;
+}
+
+@keyframes animate {
+    20%{background-image: url(../img/img6.jpg);}
+    40%{background-image: url(../img/img2.jpg);}
+    60%{background-image: url(../img/img3.jpg);}
+    80%{background-image: url(../img/img4.jpg);}
+    100%{background-image: url(../img/img5.jpg);}
+}
+
+.circle_two {
+    background-image: url(../img/img1.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: slide 2s infinite;
+    transform: rotate(359deg);
+}
+
+@keyframes slide {
+    100%{transform: rotate(1deg);}
+}
+
+.circle_three {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 130px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-size: 30px;
+    animation: blink 5s infinite; 
+}
+
+@keyframes blink {
+    20%{background-color: red; color: rgb(69, 73, 8);}
+    40%{background-color: rgb(91, 233, 91); color: blue;}
+    60%{background-color: rgb(191, 202, 30); color: black;}
+    80%{background-color: rgb(50, 54, 102); color: red;}
+    100%{background-color: rgb(11, 199, 27); color: rgb(128, 94, 0);}
+}
+
+
+.circle_four {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-image: url(../img/img5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    position: relative;
+    animation-name: image;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+.circle_four:hover {
+    transform: rotate(60deg);
+}
+
+@keyframes image {
+    0%{left: 0px}
+    5%{left: 0px}
+    10%{left: -500px}
+    20%{left: -500px}
+    30%{left: -1000px}
+    40%{left: -1000px}
+    50%{left: -1500px}
+    60%{left: -1500px}
+    70%{left: -2000px}
+    75%{left: -2000px}
+    80%{left: -2500px}
+    85%{left: -2500px}
+    90%{left: -3000px}
+    100%{left: -3000px}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:871px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+.container {
+    border: 10px solid rgb(4, 250, 205);
+    background-color: aquamarine;
+}
+
+.circle_one {
+    background-image: url(../img/img1.jpg);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 5s infinite ease-in-out;
+}
+
+@keyframes animate {
+    20%{background-image: url(../img/img6.jpg);}
+    40%{background-image: url(../img/img2.jpg);}
+    60%{background-image: url(../img/img3.jpg);}
+    80%{background-image: url(../img/img4.jpg);}
+    100%{background-image: url(../img/img5.jpg);}
+}
+
+.circle_two {
+    background-image: url(../img/img1.jpg);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: slide 2s infinite;
+    transform: rotate(359deg);
+}
+
+@keyframes slide {
+    100%{transform: rotate(1deg);}
+}
+
+.circle_three {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 130px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-size: 30px;
+    animation: blink 5s infinite; 
+}
+
+@keyframes blink {
+    20%{background-color: red; color: rgb(69, 73, 8);}
+    40%{background-color: rgb(91, 233, 91); color: blue;}
+    60%{background-color: rgb(191, 202, 30); color: black;}
+    80%{background-color: rgb(50, 54, 102); color: red;}
+    100%{background-color: rgb(11, 199, 27); color: rgb(128, 94, 0);}
+}
+
+
+.circle_four {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    background-image: url(../img/img5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-name: image;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+.circle_four:hover {
+    transform: rotate(60deg);
+}
+
+@keyframes image {
+    0%{left: 0px}
+    5%{left: 0px}
+    10%{left: -500px}
+    20%{left: -500px}
+    30%{left: -1000px}
+    40%{left: -1000px}
+    50%{left: -1500px}
+    60%{left: -1500px}
+    70%{left: -2000px}
+    75%{left: -2000px}
+    80%{left: -2500px}
+    85%{left: -2500px}
+    90%{left: -3000px}
+    100%{left: -3000px}
+}
+
+}
